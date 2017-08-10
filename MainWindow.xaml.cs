@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using CloudLearning.ServiceReference1;
+
 namespace CloudLearning
 {
     /// <summary>
@@ -27,7 +29,13 @@ namespace CloudLearning
 
         private void btn_test_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                var x = new MyServiceClient();
 
+                lbl_result.Content = x.CanEnter(new InputClass { x = double.Parse(tb_a.Text), y = double.Parse(tb_b.Text) });
+            }
+            catch { }
         }
     }
 }
