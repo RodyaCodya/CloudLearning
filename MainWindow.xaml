@@ -5,6 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CloudLearning"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid/>
+        Title="MainWindow" Height="277.649" Width="480.685">
+    <Grid>
+        <Label Content="a" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="b" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_a" HorizontalAlignment="Left" Height="23" Margin="26,13,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_b" HorizontalAlignment="Left" Height="23" Margin="26,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_test" Content="Test" HorizontalAlignment="Left" Margin="160,14,0,0" VerticalAlignment="Top" Width="75" Click="btn_test_Click"/>
+        <Label x:Name="lbl_result" Content="(no result)" HorizontalAlignment="Left" Margin="165,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.468,0.415" HorizontalContentAlignment="Center" Width="65"/>
+    </Grid>
 </Window>
